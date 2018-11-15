@@ -1,0 +1,24 @@
+SELECT Item From Itemes WHERE CompanyID = '1';
+
+SELECT Orders.OrderID, Customers.CustomerName
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+SELECT Categories.Category
+FROM Categories
+INNER JOIN Itemes ON  Categories.SL = Itemes.CategoryID
+
+SELECT Itemes.Category
+FROM Itemes
+INNER JOIN Categories ON Itemes.ItemID = Categories.SL
+
+SELECT DISTINCT Category FROM Itemes;
+
+CREATE VIEW [CompanyStockIn] AS SELECT  DISTINCT Company , CategoryID,CompanyID From Itemes
+SELECT  DISTINCT Company , CategoryID,CompanyID From Itemes
+CREATE VIEW [CategoryStockIn] AS  SELECT  DISTINCT CategoryID, Category From Itemes
+CREATE VIEW [CompanyStockIn] AS  SELECT  DISTINCT Company, CategoryID From Itemes
+
+CREATE VIEW [ItemStockIn] AS  SELECT  DISTINCT Item, CompanyID From Itemes
+
+SELECT  DISTINCT Item, CompanyID From Itemes
