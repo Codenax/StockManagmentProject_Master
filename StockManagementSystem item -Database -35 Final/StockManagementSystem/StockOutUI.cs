@@ -108,37 +108,60 @@ namespace StockManagementSystem
             DataTable rodt = new DataTable();
             SqlDataReader myReader = null;
             myReader = command.ExecuteReader();
-            if (myReader.Read())
-            {
-                availableViewTextBox.Text = (myReader["AvailableQuantity"].ToString());
-            }
-            else
-            {
-                availableViewTextBox.Text = "0";
+            
+            int avialableQty = 0;
 
-            }
+                if (myReader.Read())
+                {
+                    avialableQty = Convert.ToInt32(myReader["AvailableQuantity"].ToString());
+                    StockOutavailableQuantity newAvailableQuantity = new StockOutavailableQuantity();
+                    newAvailableQuantity.Item = itemStockOutComboBox.Text;
+                    foreach (var stockOut in viewModel)
+                    {
+                        if (newAvailableQuantity.Item == stockOut.Item)
+                        {
+                            avialableQty -= stockOut.Quantity;
+                        }
+                    }
+                    availableViewTextBox.Text = avialableQty.ToString();
+                }                 
+                else
+                {
+                    availableViewTextBox.Text = "0";
+
+                }            
             connection.Close();
+            return;     
         }
         private void itemStockOutComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            quantityStockOutTextBox.Text = "";
-            messageLabel.Text = "";
-            ReoderLevel();
-            AvailableQuantityView();
-
-            int reorderLavel = Convert.ToInt32(reoderTextBox.Text);
-            int quantity = Convert.ToInt32(availableViewTextBox.Text);
-
-            if (reorderLavel > quantity)
+            try
             {
-                notificationLebel.Text = "Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....";
-                timer1.Enabled = true;
-                timer1.Interval = 20;
+                quantityStockOutTextBox.Text = "";
+                messageLabel.Text = "";
+                ReoderLevel();
+                AvailableQuantityView();
+
+                int reorderLavel = Convert.ToInt32(reoderTextBox.Text);
+                int quantity = Convert.ToInt32(availableViewTextBox.Text);
+
+                if (reorderLavel > quantity)
+                {
+                    notificationLebel.Text = "Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....Stock is out of reorder level--Reorder in as soon as possible.....";
+                    timer1.Enabled = true;
+                    timer1.Interval = 20;
+                }
+                else
+                {
+                    Notification();
+                }
             }
-            else
+            catch (Exception exception)
             {
-                Notification();
-            }
+                MessageBox.Show(exception.Message);
+            } 
+
+
         }      
         //////ReoderLevel- AvailableQuantityView//////
         ///Clear box ///////
@@ -157,17 +180,18 @@ namespace StockManagementSystem
         }
         ///Clear box end///////
         //////- StockOut AddButton//////              
-        private readonly List<StockOutViewModel> viewModel = new List<StockOutViewModel>();               
+        private readonly List<StockOutViewModel> viewModel = new List<StockOutViewModel>();         
         private void addStockOutButton_Click(object sender, EventArgs e)
         {
          try
           {
-
-                  int flag = 0;
+                  int flag = 0;                 
                   StockOutViewModel vmodel = new StockOutViewModel();
-                  string categryText = categoryStockOutComboBox.Text;
+                  string categryName = categoryStockOutComboBox.Text;
+                  string companyName = companyStockOutComboBox.Text;
+                  string itemName = itemStockOutComboBox.Text;                  
                   string quantityStockOut = quantityStockOutTextBox.Text;
-                  if (categryText == null || companyStockOutComboBox.SelectedValue == null || itemStockOutComboBox.SelectedValue == null || String.IsNullOrEmpty(quantityStockOut) || Convert.ToInt32(quantityStockOutTextBox.Text) == 0)
+                  if (String.IsNullOrEmpty(categryName) || String.IsNullOrEmpty(companyName) || String.IsNullOrEmpty(itemName) || String.IsNullOrEmpty(quantityStockOut) || Convert.ToInt32(quantityStockOutTextBox.Text) == 0)
                   {
                       messageLabel.Text = ("  Fill Up The Required Information");
                       messageLabel.ForeColor = Color.Red;
@@ -190,7 +214,7 @@ namespace StockManagementSystem
                          vmodel.Quantity = Convert.ToInt32(quantityStockOutTextBox.Text);
                            foreach (var viewm in viewModel)
                               {
-                                  if (viewm.Item == itemStockOutComboBox.Text)
+                             if (viewm.Item == itemStockOutComboBox.Text)
                               {
                                   flag = 1;
                                   viewm.Quantity += Convert.ToInt32(quantityStockOutTextBox.Text);
@@ -209,7 +233,7 @@ namespace StockManagementSystem
                                   ProductListDataGridView.DataSource = viewModel;
                                   ProductListDataGridView.AutoGenerateColumns = false;
                                   itemStockOutComboBox.Text = "";
-                                  clearReoderQuantityAvilable();
+                                  clearReoderQuantityAvilable();                          
                         }
                   }                                                                                      
            }
@@ -217,7 +241,7 @@ namespace StockManagementSystem
            {
                  MessageBox.Show(exception.Message);
            }  
-      }
+       }
         private void ProductListDataGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
         {
             this.ProductListDataGridView.Rows[e.RowIndex].Cells["SL"].Value = (e.RowIndex + 1).ToString();
@@ -360,5 +384,6 @@ namespace StockManagementSystem
             timeLabel.Text = DateTime.Now.ToLongTimeString();
             timer2.Start();
         }
+     
     }
 }

@@ -86,6 +86,7 @@
     <Compile Include="Models\Companies.cs" />
     <Compile Include="Models\companyStockIn.cs" />
     <Compile Include="Models\ItemStockIn.cs" />
+    <Compile Include="Models\StockOutavailableQuantity.cs" />
     <Compile Include="Models\StockOutViewModel.cs" />
     <Compile Include="SearchItemsSummaryUI.cs">
       <SubType>Form</SubType>

@@ -71,7 +71,7 @@ namespace StockManagementSystem
                         if (isSaved)
                         {
                             messageLabel.Text = "Category Informetion Save Successfully";
-                            messageLabel.ForeColor = Color.Blue;                                                        
+                            messageLabel.ForeColor = Color.Green;                                                        
                             DataTable cdt = categoryShowManager.GetCategoryShow();
                             categoryDataGridView.DataSource = cdt;
                         }
@@ -108,7 +108,7 @@ namespace StockManagementSystem
                     if (categoryNameCount > 0)
                     {                       
                         messageLabel.Text = "    Category Name Already Have";
-                        messageLabel.ForeColor = Color.Green;
+                        messageLabel.ForeColor = Color.Blue;
                     }
                     else
                     {

@@ -77,6 +77,7 @@
             // addStockOutButton
             // 
             this.addStockOutButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.addStockOutButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addStockOutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addStockOutButton.ForeColor = System.Drawing.Color.White;
             this.addStockOutButton.Location = new System.Drawing.Point(270, 210);
@@ -248,9 +249,10 @@
             // sellButton
             // 
             this.sellButton.BackColor = System.Drawing.Color.Aquamarine;
+            this.sellButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.sellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sellButton.ForeColor = System.Drawing.Color.White;
-            this.sellButton.Location = new System.Drawing.Point(151, 436);
+            this.sellButton.Location = new System.Drawing.Point(256, 431);
             this.sellButton.Name = "sellButton";
             this.sellButton.Size = new System.Drawing.Size(130, 32);
             this.sellButton.TabIndex = 7;
@@ -261,9 +263,10 @@
             // damageButton
             // 
             this.damageButton.BackColor = System.Drawing.Color.Maroon;
+            this.damageButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.damageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.damageButton.ForeColor = System.Drawing.Color.White;
-            this.damageButton.Location = new System.Drawing.Point(288, 436);
+            this.damageButton.Location = new System.Drawing.Point(393, 431);
             this.damageButton.Name = "damageButton";
             this.damageButton.Size = new System.Drawing.Size(130, 32);
             this.damageButton.TabIndex = 8;
@@ -274,9 +277,10 @@
             // lostButton
             // 
             this.lostButton.BackColor = System.Drawing.Color.Purple;
+            this.lostButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lostButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lostButton.ForeColor = System.Drawing.Color.White;
-            this.lostButton.Location = new System.Drawing.Point(425, 436);
+            this.lostButton.Location = new System.Drawing.Point(530, 431);
             this.lostButton.Name = "lostButton";
             this.lostButton.Size = new System.Drawing.Size(130, 32);
             this.lostButton.TabIndex = 9;
@@ -307,7 +311,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(44, 85);
+            this.groupBox1.Location = new System.Drawing.Point(79, 85);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(735, 485);
             this.groupBox1.TabIndex = 17;
@@ -363,7 +367,7 @@
             this.groupBox2.Controls.Add(this.dateLabel);
             this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Red;
-            this.groupBox2.Location = new System.Drawing.Point(634, 51);
+            this.groupBox2.Location = new System.Drawing.Point(669, 51);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(190, 42);
             this.groupBox2.TabIndex = 18;
@@ -398,7 +402,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(352, 23);
+            this.label7.Location = new System.Drawing.Point(387, 23);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(126, 29);
             this.label7.TabIndex = 19;
@@ -409,7 +413,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(828, 599);
+            this.ClientSize = new System.Drawing.Size(900, 599);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

@@ -117,58 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="itemStockInBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>456, 17</value>
+  <metadata name="categoriesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>393, 17</value>
   </metadata>
-  <metadata name="itemStockInBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>456, 17</value>
+  <metadata name="companiesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>204, 17</value>
   </metadata>
-  <metadata name="companyStockInBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>235, 17</value>
-  </metadata>
-  <metadata name="companyStockInBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>235, 17</value>
-  </metadata>
-  <metadata name="categoryStockInBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="categoryStockInBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="SL.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Item.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Company.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="SL.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Item.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Company.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="Quantity.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="notificationLebel.Text" xml:space="preserve">
-    <value>Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible.Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible.Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible.Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible. Stock is out of reorder level----Stock in as soon as possible.</value>
-  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>651, 17</value>
-  </metadata>
-  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>42</value>
+    <value>580, 17</value>
   </metadata>
 </root>

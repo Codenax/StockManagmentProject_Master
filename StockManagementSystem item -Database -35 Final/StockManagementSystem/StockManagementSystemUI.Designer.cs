@@ -63,7 +63,7 @@
             this.searchToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(785, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(892, 29);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -150,7 +150,7 @@
             this.label1.BackColor = System.Drawing.Color.PapayaWhip;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label1.Location = new System.Drawing.Point(125, 136);
+            this.label1.Location = new System.Drawing.Point(167, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(506, 36);
             this.label1.TabIndex = 1;
@@ -162,7 +162,7 @@
             this.label2.BackColor = System.Drawing.Color.SeaShell;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.ForestGreen;
-            this.label2.Location = new System.Drawing.Point(181, 193);
+            this.label2.Location = new System.Drawing.Point(221, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(398, 29);
             this.label2.TabIndex = 2;
@@ -171,7 +171,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(237, 242);
+            this.pictureBox1.Location = new System.Drawing.Point(280, 242);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(281, 148);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -206,7 +206,7 @@
             this.groupBox1.Controls.Add(this.dateLabel);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Red;
-            this.groupBox1.Location = new System.Drawing.Point(569, 32);
+            this.groupBox1.Location = new System.Drawing.Point(647, 39);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(216, 47);
             this.groupBox1.TabIndex = 5;
@@ -217,7 +217,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
-            this.ClientSize = new System.Drawing.Size(785, 445);
+            this.ClientSize = new System.Drawing.Size(892, 502);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
