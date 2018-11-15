@@ -70,3 +70,31 @@ C:\Users\Jahangir\Desktop\StockManagementSystem5 item -Database - Copy\StockMana
 C:\Users\Jahangir\Desktop\StockManagementSystem5 item -Database - Copy\StockManagementSystem\obj\Debug\StockManagementSystem.csproj.GenerateResource.Cache
 C:\Users\Jahangir\Desktop\StockManagementSystem5 item -Database - Copy\StockManagementSystem\bin\Debug\StockManagementSystem.exe
 C:\Users\Jahangir\Desktop\StockManagementSystem5 item -Database - Copy\StockManagementSystem\bin\Debug\StockManagementSystem.pdb
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\bin\Debug\StockManagementSystem.exe.config
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.exe
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.pdb
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\bin\Debug\StockManagementSystem.exe
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\bin\Debug\StockManagementSystem.pdb
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.CategorySetupUI.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.CompanySetupUI.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.ItemSetupUI.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.StockInUI.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.StockManagementSystemUI.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.Properties.Resources.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.csproj.GenerateResource.Cache
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.SearchItemsSummaryUI.resources
+C:\Users\Jahangir\Desktop\Stock_Manajment_System\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\bin\Debug\StockManagementSystem.exe.config
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.exe
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.pdb
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\bin\Debug\StockManagementSystem.exe
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\bin\Debug\StockManagementSystem.pdb
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.csprojResolveAssemblyReference.cache
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.CategorySetupUI.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.CompanySetupUI.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.ItemSetupUI.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.SearchItemsSummaryUI.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.StockInUI.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.StockManagementSystemUI.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.Properties.Resources.resources
+C:\Users\Jahangir\OneDrive\Stock_m_s\StockManagementSystem item -Database -8\StockManagementSystem\obj\Debug\StockManagementSystem.csproj.GenerateResource.Cache

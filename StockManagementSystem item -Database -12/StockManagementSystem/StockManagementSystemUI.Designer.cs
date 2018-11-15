@@ -33,6 +33,9 @@
             this.companySetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.itemSetupToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockInToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchAndViewItemsSummaryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,7 +45,9 @@
             this.categorySetupToolStripMenuItem,
             this.companySetupToolStripMenuItem,
             this.itemSetupToolStripMenuItem,
-            this.stockInToolStripMenuItem});
+            this.stockInToolStripMenuItem,
+            this.stockOutToolStripMenuItem,
+            this.searchToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(746, 24);
@@ -77,6 +82,27 @@
             this.stockInToolStripMenuItem.Text = "StockIn";
             this.stockInToolStripMenuItem.Click += new System.EventHandler(this.stockInToolStripMenuItem_Click);
             // 
+            // stockOutToolStripMenuItem
+            // 
+            this.stockOutToolStripMenuItem.Name = "stockOutToolStripMenuItem";
+            this.stockOutToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.stockOutToolStripMenuItem.Text = "StockOut";
+            // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.searchAndViewItemsSummaryToolStripMenuItem});
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
+            this.searchToolStripMenuItem.Text = "Search";
+            // 
+            // searchAndViewItemsSummaryToolStripMenuItem
+            // 
+            this.searchAndViewItemsSummaryToolStripMenuItem.Name = "searchAndViewItemsSummaryToolStripMenuItem";
+            this.searchAndViewItemsSummaryToolStripMenuItem.Size = new System.Drawing.Size(246, 22);
+            this.searchAndViewItemsSummaryToolStripMenuItem.Text = "Search and View Items Summary";
+            this.searchAndViewItemsSummaryToolStripMenuItem.Click += new System.EventHandler(this.searchAndViewItemsSummaryToolStripMenuItem_Click);
+            // 
             // StockManagementSystemUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -101,6 +127,9 @@
         private System.Windows.Forms.ToolStripMenuItem companySetupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem itemSetupToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stockInToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem stockOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem searchAndViewItemsSummaryToolStripMenuItem;
     }
 }
 

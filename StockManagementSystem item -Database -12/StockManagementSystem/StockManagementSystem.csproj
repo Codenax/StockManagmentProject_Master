@@ -49,6 +49,7 @@
     <Compile Include="BLL\CompaniesMenager.cs" />
     <Compile Include="BLL\CompaniesShowManager.cs" />
     <Compile Include="BLL\ItemSetupManager.cs" />
+    <Compile Include="BLL\SearchItemsManager.cs" />
     <Compile Include="BLL\StockInManager.cs" />
     <Compile Include="CategorySetupUI.cs">
       <SubType>Form</SubType>
@@ -67,6 +68,7 @@
     <Compile Include="DAL\CompaniesDaL.cs" />
     <Compile Include="DAL\CompaniesShowDaL.cs" />
     <Compile Include="DAL\ItemSetupDaL.cs" />
+    <Compile Include="DAL\SearchItemsDaL.cs" />
     <Compile Include="DAL\StockInDaL.cs" />
     <Compile Include="ItemSetupUI.cs">
       <SubType>Form</SubType>
@@ -79,6 +81,12 @@
     <Compile Include="Models\Companies.cs" />
     <Compile Include="Models\companyStockIn.cs" />
     <Compile Include="Models\ItemStockIn.cs" />
+    <Compile Include="SearchItemsSummaryUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchItemsSummaryUI.Designer.cs">
+      <DependentUpon>SearchItemsSummaryUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="StockInUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ItemSetupUI.resx">
       <DependentUpon>ItemSetupUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchItemsSummaryUI.resx">
+      <DependentUpon>SearchItemsSummaryUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StockInUI.resx">
       <DependentUpon>StockInUI.cs</DependentUpon>

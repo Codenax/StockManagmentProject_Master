@@ -48,12 +48,13 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.companyDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.companyDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.companyDataGridView.Location = new System.Drawing.Point(212, 177);
+            this.companyDataGridView.Location = new System.Drawing.Point(202, 177);
             this.companyDataGridView.Name = "companyDataGridView";
             this.companyDataGridView.RowHeadersWidth = 30;
             this.companyDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.companyDataGridView.Size = new System.Drawing.Size(235, 142);
+            this.companyDataGridView.Size = new System.Drawing.Size(233, 151);
             this.companyDataGridView.TabIndex = 9;
+            this.companyDataGridView.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.companyDataGridView_RowPrePaint);
             // 
             // saveButton
             // 

@@ -100,7 +100,7 @@ namespace StockManagementSystem
         private void AvailableQuantityView()
         {
             stockManagementSystem.ItemID = Convert.ToInt32(itemStockInComboBox.SelectedValue);
-            string query = @"SELECT AvailableQuantity From AvailableQuantities WHERE ItemID = '" + stockManagementSystem.ItemID + "' ";
+            string query = @"SELECT AvailableQuantity From StockIn WHERE ItemID = '" + stockManagementSystem.ItemID + "' ";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Open();
             DataTable rodt = new DataTable();
@@ -167,6 +167,5 @@ namespace StockManagementSystem
             }
         }                   
         ////////////StockIn-Database End////////////
-
     }
 }

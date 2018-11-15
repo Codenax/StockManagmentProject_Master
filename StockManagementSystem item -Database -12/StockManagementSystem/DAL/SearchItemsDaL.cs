@@ -8,20 +8,34 @@ using System.Threading.Tasks;
 
 namespace StockManagementSystem.DAL
 {
-    class CategoryShowDaL
+    class SearchItemsDaL
     {
         static String connectionString = @"Data Source=JAHANGIR_PC;Initial Catalog=StockManagementSystem;Integrated Security=True";
         SqlConnection connection = new SqlConnection(connectionString);
-        public DataTable GetCategoryShow()
+        public DataTable GetCategoryBindingSource()
         {
             string query = @"SELECT * FROM Categories";
             SqlCommand command = new SqlCommand(query, connection);
             connection.Open();
+
             SqlDataAdapter da = new SqlDataAdapter(command);
-            DataTable cdt = new DataTable();
-            da.Fill(cdt);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
             connection.Close();
-            return cdt;
+            return dt;
         }
+        public DataTable GetCompanyBindingSource()
+        {
+            string query = @"SELECT * FROM Companies";
+            SqlCommand command = new SqlCommand(query, connection);
+            connection.Open();
+
+            SqlDataAdapter da = new SqlDataAdapter(command);
+            DataTable dtc = new DataTable();
+            da.Fill(dtc);
+            connection.Close();
+            return dtc;
+        }
+
     }
 }

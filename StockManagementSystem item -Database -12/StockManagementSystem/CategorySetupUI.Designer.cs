@@ -35,6 +35,8 @@
             this.saveButton = new System.Windows.Forms.Button();
             this.updateButton = new System.Windows.Forms.Button();
             this.categoryDataGridView = new System.Windows.Forms.DataGridView();
+            this.SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,13 +99,29 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.categoryDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.categoryDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.categoryDataGridView.Location = new System.Drawing.Point(187, 185);
+            this.categoryDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.SL,
+            this.Name});
+            this.categoryDataGridView.Location = new System.Drawing.Point(208, 178);
             this.categoryDataGridView.Name = "categoryDataGridView";
             this.categoryDataGridView.RowHeadersWidth = 30;
             this.categoryDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.categoryDataGridView.Size = new System.Drawing.Size(282, 150);
+            this.categoryDataGridView.Size = new System.Drawing.Size(240, 187);
             this.categoryDataGridView.TabIndex = 3;
+            this.categoryDataGridView.RowPostPaint += new System.Windows.Forms.DataGridViewRowPostPaintEventHandler(this.categoryDataGridView_RowPostPaint);
             this.categoryDataGridView.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.categoryDataGridView_MouseDoubleClick);
+            // 
+            // SL
+            // 
+            this.SL.DataPropertyName = "SL";
+            this.SL.HeaderText = "SL";
+            this.SL.Name = "SL";
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "Category";
+            this.Name.HeaderText = "Name";
+            this.Name.Name = "Name";
             // 
             // CategorySetupUI
             // 
@@ -116,8 +134,7 @@
             this.Controls.Add(this.categoryNameTextBox);
             this.Controls.Add(this.messageLabel);
             this.Controls.Add(this.label1);
-            this.Name = "CategorySetupUI";
-            this.Text = "CategorySetupUI";
+            //this.Name = "CategorySetupUI";
             this.Load += new System.EventHandler(this.CategorySetupUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.categoryDataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -133,5 +150,7 @@
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.DataGridView categoryDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Name;
     }
 }

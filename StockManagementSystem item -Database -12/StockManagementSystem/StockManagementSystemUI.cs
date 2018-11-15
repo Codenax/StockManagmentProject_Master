@@ -40,5 +40,11 @@ namespace StockManagementSystem
             StockInUI si = new StockInUI();
             si.ShowDialog();
         }
+
+        private void searchAndViewItemsSummaryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SearchItemsSummaryUI sis = new SearchItemsSummaryUI();
+            sis.ShowDialog();
+        }
     }
 }

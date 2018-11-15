@@ -137,5 +137,11 @@ namespace StockManagementSystem
             DataTable cdt = categoryShowManager.GetCategoryShow();
             categoryDataGridView.DataSource = cdt;
         }
+
+        private void categoryDataGridView_RowPostPaint(object sender, DataGridViewRowPostPaintEventArgs e)
+        {
+
+            this.categoryDataGridView.AllowUserToAddRows = false; 
+        }
     }
 }

@@ -91,5 +91,10 @@ namespace StockManagementSystem
             DataTable csdt = companiesShowManager.GetCompaniesShow();
             companyDataGridView.DataSource = csdt;
         }
+
+        private void companyDataGridView_RowPrePaint(object sender, DataGridViewRowPrePaintEventArgs e)
+        {
+            this.companyDataGridView.AllowUserToAddRows = false; 
+        }
     }
 }
