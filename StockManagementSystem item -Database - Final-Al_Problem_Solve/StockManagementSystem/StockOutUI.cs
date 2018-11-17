@@ -107,29 +107,27 @@ namespace StockManagementSystem
             connection.Open();
             DataTable rodt = new DataTable();
             SqlDataReader myReader = null;
-            myReader = command.ExecuteReader();
-            
-            int avialableQty = 0;
-
-                if (myReader.Read())
+            myReader = command.ExecuteReader();          
+            int avialableQty = 0;            
+            if (myReader.Read())
+            {
+                avialableQty = Convert.ToInt32(myReader["AvailableQuantity"].ToString());
+                StockOutavailableQuantity newAvailableQuantity = new StockOutavailableQuantity();
+                newAvailableQuantity.Item = itemStockOutComboBox.Text;
+                foreach (var stockOut in viewModel)
                 {
-                    avialableQty = Convert.ToInt32(myReader["AvailableQuantity"].ToString());
-                    StockOutavailableQuantity newAvailableQuantity = new StockOutavailableQuantity();
-                    newAvailableQuantity.Item = itemStockOutComboBox.Text;
-                    foreach (var stockOut in viewModel)
+                    if (newAvailableQuantity.Item == stockOut.Item)
                     {
-                        if (newAvailableQuantity.Item == stockOut.Item)
-                        {
-                            avialableQty -= stockOut.Quantity;
-                        }
+                        avialableQty -= stockOut.Quantity;
                     }
-                    availableViewTextBox.Text = avialableQty.ToString();
-                }                 
-                else
-                {
-                    availableViewTextBox.Text = "0";
+                }
+                availableViewTextBox.Text = avialableQty.ToString();
+            }
+            else
+            {
+                availableViewTextBox.Text = "0";
 
-                }            
+            }
             connection.Close();
             return;     
         }
@@ -180,12 +178,13 @@ namespace StockManagementSystem
         }
         ///Clear box end///////
         //////- StockOut AddButton//////              
-        private readonly List<StockOutViewModel> viewModel = new List<StockOutViewModel>();         
+        private readonly List<StockOutViewModel> viewModel = new List<StockOutViewModel>();
+        //StockOutViewModel vmodel = new StockOutViewModel();
         private void addStockOutButton_Click(object sender, EventArgs e)
         {
          try
           {
-                  int flag = 0;                 
+                  int flag = 0;
                   StockOutViewModel vmodel = new StockOutViewModel();
                   string categryName = categoryStockOutComboBox.Text;
                   string companyName = companyStockOutComboBox.Text;
@@ -252,8 +251,8 @@ namespace StockManagementSystem
         private void sellButton_Click(object sender, EventArgs e)
         {
             try
-            {
-                if (ProductListDataGridView.DataSource == null)
+            { 
+            if (ProductListDataGridView.DataSource == null )
                 {
                     messageLabel.Text = "     Add Item In The List First";
                     messageLabel.ForeColor = Color.Red;
@@ -283,7 +282,8 @@ namespace StockManagementSystem
                     messageLabel.Text = "Sales Information Saved Successfully";
                     messageLabel.ForeColor = Color.Green;
                     clearReoderQuantityAvilable();
-                    ProductListDataGridView.DataSource = "";
+                    ProductListDataGridView.DataSource = null;
+                    viewModel.Clear();
                 }
             }
            catch (Exception exception)
@@ -315,8 +315,9 @@ namespace StockManagementSystem
                     }
                     messageLabel.Text = "Damage Information Saved Successfully";
                     messageLabel.ForeColor = Color.Blue;
-                    ProductListDataGridView.DataSource = "";
+                    ProductListDataGridView.DataSource = null;
                     clearReoderQuantityAvilable();
+                    viewModel.Clear();
                 }
              }
            catch (Exception exception)
@@ -347,8 +348,11 @@ namespace StockManagementSystem
                     }
                     messageLabel.Text = "Lost Information Saved Successfully";
                     messageLabel.ForeColor = Color.Blue;
-                    ProductListDataGridView.DataSource = "";
+                    ProductListDataGridView.DataSource ="";
                     clearReoderQuantityAvilable();
+                    viewModel.Clear();
+                
+
                 }
              }
             catch (Exception exception)

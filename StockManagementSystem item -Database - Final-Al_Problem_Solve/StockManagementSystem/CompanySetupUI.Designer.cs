@@ -115,7 +115,7 @@
             this.messageLabel.AutoSize = true;
             this.messageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.messageLabel.ForeColor = System.Drawing.Color.Red;
-            this.messageLabel.Location = new System.Drawing.Point(623, 86);
+            this.messageLabel.Location = new System.Drawing.Point(676, 89);
             this.messageLabel.Name = "messageLabel";
             this.messageLabel.Size = new System.Drawing.Size(0, 13);
             this.messageLabel.TabIndex = 0;
@@ -138,7 +138,7 @@
             this.groupBox1.Controls.Add(this.saveButton);
             this.groupBox1.Controls.Add(this.companyNameTextBox);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(107, 80);
+            this.groupBox1.Location = new System.Drawing.Point(160, 83);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(510, 354);
             this.groupBox1.TabIndex = 10;
@@ -160,7 +160,7 @@
             this.groupBox2.Controls.Add(this.dateLabel);
             this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Red;
-            this.groupBox2.Location = new System.Drawing.Point(529, 46);
+            this.groupBox2.Location = new System.Drawing.Point(582, 49);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(190, 42);
             this.groupBox2.TabIndex = 11;
@@ -195,7 +195,7 @@
             this.label7.BackColor = System.Drawing.Color.MediumAquamarine;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(271, 23);
+            this.label7.Location = new System.Drawing.Point(324, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(197, 29);
             this.label7.TabIndex = 22;
@@ -206,7 +206,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(724, 460);
+            this.ClientSize = new System.Drawing.Size(847, 508);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
